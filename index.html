@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevFluencer - Andres Goyes - Portfolio</title>
 
-    <!-- Font Awesome for Icons -->    
+    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <!-- Google Fonts -->
@@ -140,7 +140,7 @@
             <div class="skill-item">
                 <i class="fas fa-database" style="color: #4DB33D;"></i>
                 <p>MongoDB</p>
-            </div>                        
+            </div>
             <div class="skill-item">
                 <i class="fas fa-key" style="color: #F7DF1E;"></i>
                 <p>JWT</p>
@@ -177,7 +177,7 @@
                 <h3>Univalle Joomla Pages</h3>
                 <p>My work was implement all EIEE Univalle websites and research groups to Joomla.</p>
                 <a href="https://eiee.univalle.edu.co/" class="btn">Explore</a>
-            </div>            
+            </div>
             <div class="project-card">
                 <img src="../portfolio/src/images/project2.jpg" alt="Mangas and Comics site">
                 <h3>Minga</h3>
@@ -270,49 +270,7 @@
                 }
             });
         });
-    </script>
-    <script>
-        function createSnowflake() {
-          const snowflake = Object.assign(
-            document.createElement('div'),
-            {
-              className: 'snowflake',
-              style: `
-              left: ${Math.random() * innerWidth}px;
-              top: -5px;
-              opacity: ${Math.random()};
-              transform: scale(${Math.random() * 1.5 + 0.5});`
-            }
-          )
-      
-          document.body.appendChild(snowflake);
-      
-          let posY = -5;
-          let speed = Math.random() * 2 + 1;
-          let wobble = 0;
-      
-          function fall() {
-            posY += speed;
-            wobble += 0.02;
-            snowflake.style.top = posY + 'px';
-            snowflake.style.left =
-              parseFloat(snowflake.style.left) +
-              Math.sin(wobble) * 2 + 'px';
-      
-            posY < innerHeight
-              ? requestAnimationFrame(fall)
-              : snowflake.remove();
-          }
-      
-          fall();
-        }
-      
-        function generateSnow() {
-          setInterval(createSnowflake, 100);
-        }
-      
-        generateSnow();
-      </script>
+    </script>    
 </body>
 
 </html>
